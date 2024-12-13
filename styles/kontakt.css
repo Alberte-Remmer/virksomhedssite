@@ -10,5 +10,11 @@ a {
   color: #e6bd4f;
 }
 
-@media (min-width: 800) {
+iframe {
+  width: 400px;
+  height: 400px;
+}
+
+.grid_1-1 {
+  background-color: #e2dcd0;
 }
