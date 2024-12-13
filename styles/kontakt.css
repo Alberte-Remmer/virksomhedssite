@@ -1,0 +1,14 @@
+/* generelt */
+html {
+  background-color: #0f2815;
+}
+p {
+  color: white;
+}
+
+a {
+  color: #e6bd4f;
+}
+
+@media (min-width: 800) {
+}
