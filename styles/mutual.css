@@ -38,3 +38,13 @@ h3 {
 p {
   font-family: "Inter", sans-serif;
 }
+
+/***** grid 1fr 1fr *******/
+@media (min-width: 700px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: var(--space-xl);
+  }
+}
