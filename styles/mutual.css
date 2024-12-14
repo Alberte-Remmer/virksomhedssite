@@ -6,7 +6,7 @@ html {
   --quarternary: #191f1b;
 
   /** spacing **/
-  --space-xxl: 0.25rem;
+  --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -34,7 +34,11 @@ h2 {
 }
 h3 {
   font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: lighter;
 }
 p {
   font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: lighter;
 }

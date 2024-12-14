@@ -9,6 +9,7 @@
   background-color: var(--quarternary);
   margin-left: var(--space-sm);
   margin-right: var(--space-sm);
+  padding-bottom: var(--space-lg);
 }
 
 .pic_1 {
@@ -16,6 +17,20 @@
   margin-right: var(--space-xl);
   padding-top: var(--space-lg);
 }
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: lighter;
+}
+
+.tider_tekst {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 /**** opdagelse ****/
 
 .pic_container {
@@ -31,9 +46,13 @@
 .pic_tekst {
   position: absolute;
   top: 10%;
-  /* left: 2%; */
   z-index: 200;
   background-color: var(--tertiary);
+  opacity: 70%;
+  padding-left: 0.25rem;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  padding-right: var(--space-xs);
 }
 
 /**** seier ****/
@@ -48,9 +67,23 @@
   padding-bottom: var(--space-xl);
 }
 
+.flex_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex_1 img {
+  width: 250px;
+}
+
 /**** genre ****/
 .genre {
   background-color: var(--primary);
+}
+
+.flex_2 {
+  display: flex;
 }
 
 /**** skatte ****/
