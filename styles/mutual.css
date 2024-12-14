@@ -41,4 +41,6 @@ p {
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: lighter;
+  max-width: 600px;
+  line-height: 1.6;
 }
