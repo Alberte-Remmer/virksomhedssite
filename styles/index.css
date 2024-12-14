@@ -113,21 +113,32 @@ dl {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
 
-.tider_tekst {
-  padding-top: 14rem;
-}
+  .tider_tekst {
+    padding-top: 14rem;
+  }
+  /**** seier ****/
 
-/***** ind i mutual *****/
-/* .index_tekst {
-  max-width: 550px;
-  line-height: 1.6;
-} */
+  .seier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: var(--space-xl);
+    padding-top: var(--space-xl);
+    padding-right: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
 
-/**** genre ****/
+  .flex_1 {
+    order: -1;
+  }
 
-.genre {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /**** genre ****/
+
+  .genre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: var(--space-xl);
+    padding-right: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
 }
