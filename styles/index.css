@@ -58,6 +58,9 @@ dl {
 /**** seier ****/
 .seier {
   background-color: var(--tertiary);
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
+  padding-bottom: var(--space-xl);
 }
 
 .index_tekst {
@@ -75,22 +78,67 @@ dl {
 
 .flex_1 {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 600px;
+  height: 200px;
 }
 
 .flex_1 img {
   width: 250px;
+  position: absolute;
+}
+
+.pic_seier {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.pic_karen {
+  top: 120px;
+  left: 170px;
+  z-index: 2;
 }
 
 /**** genre ****/
 .genre {
   background-color: var(--primary);
+  padding-left: var(--space-sm);
+  padding-top: var(--space-lg);
+  padding-right: var(--space-sm);
 }
 
 .flex_2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 600px;
 }
 
+.flex_2 img {
+  width: 200px;
+  position: absolute;
+}
+
+.pic_concrete {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.pic_gul {
+  top: 40px;
+  left: 170px;
+  z-index: 2;
+}
+.pic_kaput {
+  top: 180px;
+  left: 80px;
+  z-index: 3;
+}
 /**** skatte ****/
 .index_tekst_2 {
   padding-left: var(--space-xl);
