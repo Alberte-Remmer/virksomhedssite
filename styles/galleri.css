@@ -1,7 +1,19 @@
-main {
+html {
   background-color: #0f2815;
 }
 .grid_1 {
+  padding: 5%;
+  margin-bottom: var(--space-md);
+}
+
+.grid_1 h1 {
+  padding-bottom: var(--space-md);
+}
+.grid_1 h3,
+p {
+  padding-bottom: var(--space-sm);
+}
+.grid_2 {
   background-color: #e2dcd0;
   padding: 5%;
 }
