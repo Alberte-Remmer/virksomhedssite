@@ -10,11 +10,194 @@ a {
   color: #e6bd4f;
 }
 
-iframe {
-  width: 400px;
-  height: 400px;
+p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-.grid_1-1 {
+h1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 850px) {
+  .bøger {
+    position: absolute; /* Placer div'en uafhængigt */
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    z-index: -1; /* Sender den bag alt andet */
+  }
+}
+
+@media (max-width: 850px) {
+  .bøger {
+    display: none;
+  }
+}
+/* maps */
+.map-container {
+  flex: 0 1 45%; /* Gør begge divs næsten lige store, med plads til margin */
+  max-width: 600px; /* Tilpas størrelsen, hvis nødvendigt */
+  aspect-ratio: 1; /* Sørger for, at de er kvadratiske */
+  position: relative;
   background-color: #e2dcd0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 600px) {
+  .grid_1-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e2dcd0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-container {
+    margin: 4rem;
+    background-color: #e2dcd0;
+  }
+  .grid_1-1 {
+    background-color: #e2dcd0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/* menu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: #191f1b;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 15px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #e6bd4f;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #191f1b;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 20px;
+  }
 }
