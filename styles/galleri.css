@@ -1,3 +1,4 @@
+/** Generelt **/
 html {
   background-color: #0f2815;
 }
@@ -12,13 +13,27 @@ html {
 .grid_1 h3,
 p {
   padding-bottom: var(--space-sm);
-  max-width: 400px;
+  max-width: 42ch; /* Begrænser bredden til max 42 tegn på hver linje */
 }
 .grid_2 {
   background-color: #e2dcd0;
   padding: 5%;
 }
 
+#knap {
+  position: absolute;
+  width: 35%;
+  aspect-ratio: 966/544;
+  top: 38%;
+  left: 5%;
+  cursor: pointer;
+}
+
+#knap:hover {
+  transform: scale(1.05); /* Let forstørrelse for ekstra effekt */
+}
+
+/** Desktop format **/
 @media (min-width: 600px) {
   h1 {
     font-size: 4rem;
@@ -28,6 +43,14 @@ p {
   }
   p {
     font-size: 1.2rem;
-    max-width: 700px;
+    max-width: 63ch; /* Begrænser bredden til max 63 tegn på hver linje */
+  }
+  #knap {
+    position: absolute;
+    width: 17%;
+    aspect-ratio: 966/544;
+    top: 37%;
+    left: 75%;
+    cursor: pointer;
   }
 }
