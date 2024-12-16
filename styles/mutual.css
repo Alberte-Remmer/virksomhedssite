@@ -37,13 +37,15 @@ h3 {
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: lighter;
+  padding-bottom: var(--space-sm);
 }
 p {
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: lighter;
-  max-width: 600px;
   line-height: 1.6;
+  padding-bottom: var(--space-sm);
+  max-width: 42ch; /* Begrænser bredden til max 42 tegn på hver linje */
 }
 
 li {
@@ -67,6 +69,10 @@ a {
   }
   h3 {
     font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 63ch; /* Begrænser bredden til max 63 tegn på hver linje */
   }
 }
 
