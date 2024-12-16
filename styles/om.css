@@ -1,0 +1,72 @@
+/* Hide Lottie animation in mobile */
+@media screen and (max-width: 600px) {
+  #lottie-container {
+    display: none;
+  }
+}
+
+/**** Om os ****/
+.om_os {
+  background-color: var(--primary);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+#om_tekst1,
+#om_tekst2,
+#om_tekst3 {
+  color: var(--primary);
+}
+
+/**** Skjulte skatte ****/
+.skjulte_skatte {
+  background-color: var(--tertiary);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+
+/**** Støv på støv ****/
+.støv_på_støv {
+  background-color: var(--primary);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+}
+.grøn_bagggrund {
+  background-color: var(--primary);
+}
+.hjørne {
+  margin-top: -25%;
+}
+/**** Musen ****/
+.musen {
+  background-color: var(--quarternary);
+}
+
+/**** Om os ****/
+
+@media (min-width: 600px) {
+  .om_os {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: var(--space-xl);
+    padding-right: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+  #lottie-container {
+    display: block;
+  }
+  .skjulte_skatte {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billede_fisk {
+    order: 1;
+  }
+  .støv_på_støv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .musen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
