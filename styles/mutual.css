@@ -53,6 +53,14 @@ li {
   max-width: 600px;
   line-height: 1.6;
 }
+
+a {
+  font-family: "Inter", sans-serif;
+  color: var(--secondary);
+  font-weight: lighter;
+  max-width: 600px;
+  line-height: 1.6;
+}
 @media (min-width: 600px) {
   h1 {
     font-size: 4rem;
