@@ -23,8 +23,8 @@ p {
 #knap {
   position: absolute;
   width: 35%;
-  aspect-ratio: 966/544;
-  top: 38%;
+  aspect-ratio: 1/0;
+  top: 50%;
   left: 5%;
   cursor: pointer;
 }
@@ -48,8 +48,8 @@ p {
   #knap {
     position: absolute;
     width: 17%;
-    aspect-ratio: 966/544;
-    top: 37%;
+    aspect-ratio: 1/0;
+    top: 45%;
     left: 75%;
     cursor: pointer;
   }
