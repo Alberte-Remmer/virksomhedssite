@@ -31,6 +31,8 @@ img {
 h1 {
   font-family: "Fugaz One", serif;
   color: var(--secondary);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-md);
 }
 h2 {
   font-family: "Cormorant Garamond", serif;
