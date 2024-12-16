@@ -1,6 +1,8 @@
+html {
+  background-color: var(--primary);
+}
 /**** åbningstider ****/
 .tider {
-  background-color: var(--primary);
   padding-top: var(--space-sm);
   padding-bottom: var(--space-sm);
 }
@@ -16,6 +18,7 @@
   margin-left: var(--space-xl);
   margin-right: var(--space-xl);
   padding-top: var(--space-lg);
+  width: 300px;
 }
 
 dl {
@@ -24,6 +27,7 @@ dl {
   font-family: "Inter", sans-serif;
   color: white;
   font-weight: lighter;
+  line-height: 3;
 }
 
 .tider_tekst {
@@ -34,7 +38,6 @@ dl {
 /**** opdagelse ****/
 
 .pic_container {
-  background-color: var(--primary);
   position: relative;
 }
 
@@ -60,7 +63,7 @@ dl {
   background-color: var(--tertiary);
   padding-left: var(--space-sm);
   padding-right: var(--space-sm);
-  padding-bottom: var(--space-xl);
+  padding-bottom: var(--space-xxl);
 }
 
 .index_tekst {
@@ -104,7 +107,6 @@ dl {
 
 /**** genre ****/
 .genre {
-  background-color: var(--primary);
   padding-left: var(--space-sm);
   padding-top: var(--space-lg);
   padding-right: var(--space-sm);
@@ -145,7 +147,6 @@ dl {
   padding-right: var(--space-xl);
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
-  background-color: var(--primary);
 }
 
 @media (min-width: 600px) {
@@ -173,11 +174,16 @@ dl {
     padding-left: var(--space-xl);
     padding-top: var(--space-xl);
     padding-right: var(--space-xl);
-    padding-bottom: var(--space-xl);
+    padding-bottom: 10rem;
   }
 
   .flex_1 {
     order: -1;
+  }
+
+  .flex_1 img {
+    width: 250px;
+    position: absolute;
   }
 
   /**** genre ****/
