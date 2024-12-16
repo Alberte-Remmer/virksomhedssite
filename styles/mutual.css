@@ -226,7 +226,7 @@ footer {
   background-color: #191f1b;
 }
 .footer_indhold {
-  max-width: 1000px; /* Sæt en grænse for bredden */
+  max-width: 1200px; /* Sæt en grænse for bredden */
   margin: 0 auto; /* Centrér indholdet */
   padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
