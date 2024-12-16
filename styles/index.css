@@ -38,6 +38,7 @@ dl {
 
 .tider_tekst {
   padding-left: 7rem;
+  padding-top: var(--space-lg);
   padding-right: 7rem;
 }
 
@@ -167,10 +168,14 @@ dl {
   .tider_boks {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: var(--space-lg);
   }
-
+  .pic_1 {
+    width: 400px;
+  }
   .tider_tekst {
-    padding-top: 14rem;
+    padding: 10rem;
   }
 
   /**** opdagelse ****/
