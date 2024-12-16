@@ -16,7 +16,9 @@
 #om_tekst3 {
   color: var(--primary);
 }
-
+.order {
+  order: 1;
+}
 /**** Skjulte skatte ****/
 .skjulte_skatte {
   background-color: var(--tertiary);
@@ -58,9 +60,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .billede_fisk {
-    order: 1;
-  }
+
   .støv_på_støv {
     display: grid;
     grid-template-columns: 1fr 1fr;
