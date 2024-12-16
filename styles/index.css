@@ -1,6 +1,10 @@
 html {
   background-color: var(--primary);
 }
+
+a {
+  color: var(--secondary);
+}
 /**** åbningstider ****/
 .tider {
   padding-top: var(--space-sm);
@@ -9,8 +13,8 @@ html {
 
 .tider_boks {
   background-color: var(--quarternary);
-  margin-left: var(--space-sm);
-  margin-right: var(--space-sm);
+  margin-left: var(--space-xs);
+  margin-right: var(--space-xs);
   padding-bottom: var(--space-lg);
 }
 

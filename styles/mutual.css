@@ -13,6 +13,7 @@ html {
   --space-lg: 2rem;
   --space-xl: 3rem;
   --space-xxl: 6rem;
+  --space-xxxl: 10;
 }
 * {
   margin: 0;
@@ -51,6 +52,14 @@ li {
   font-weight: lighter;
   max-width: 600px;
   line-height: 1.6;
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 /* menu */
