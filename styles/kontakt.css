@@ -1,6 +1,6 @@
 /* generelt */
 html {
-  background-color: #0f2815;
+  background-color: var(--primary);
 }
 
 main {
@@ -60,6 +60,40 @@ h2 {
   .bøger {
     display: none;
   }
+}
+
+form {
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: lighter;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.mail_box {
+  padding-bottom: 15px;
+}
+
+input[type="text"] {
+  background-color: var(--primary); /* Lyseblå baggrund */
+  border: 1px solid #ffffff; /* Blå kant */
+  padding: 5px; /* Indre margin i boksen */
+  border-radius: 3px; /* Afrundede hjørner */
+}
+
+input[type="submit"] {
+  background-color: var(--secondary); /* Blå baggrund */
+  color: #000000; /* Hvid tekst */
+  padding: 10px 15px; /* Størrelse på knappen */
+  border: none; /* Fjern kant */
+  border-radius: 5px; /* Afrundede hjørner */
+  cursor: pointer; /* Skift til klik-hånd ved hover */
+  margin-top: -10px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
 }
 
 /* maps */
