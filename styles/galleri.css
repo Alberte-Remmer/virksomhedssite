@@ -4,7 +4,7 @@ html {
 }
 
 .grid_1 {
-  padding: 5%;
+  padding: var(--space-md);
   margin-bottom: var(--space-md);
   position: relative;
 }
@@ -54,5 +54,8 @@ p {
     top: 65%;
     left: 75%;
     cursor: pointer;
+  }
+  .grid_1 {
+    padding: var(--space-xl);
   }
 }
