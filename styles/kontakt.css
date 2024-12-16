@@ -3,30 +3,25 @@ html {
   background-color: var(--primary);
 }
 
-main {
-  max-width: 1200px;
-  margin-inline: auto;
+@media (max-width: 600px) {
+  main {
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+  }
 }
-p {
-  color: white;
+
+@media (min-width: 600px) {
+  main {
+    margin-left: var(--space-xl);
+    margin-right: var(--space-xl);
+  }
 }
 
 p {
-  margin-left: 1rem;
-  margin-right: 1rem;
   margin-bottom: 1rem;
-}
-
-h1 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 
 h2 {
-  margin-left: 1rem;
-  margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
@@ -34,25 +29,21 @@ h2 {
 /* indhold */
 
 .tekst {
-  max-width: 1200px; /* Sæt en grænse for bredden */
-  margin: 0 auto; /* Centrér indholdet */
-  padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   .bøger {
-    position: absolute; /* Placer div'en uafhængigt */
+    position: absolute; /* Placerer div'en uafhængigt */
     top: 0;
     right: 0;
     width: auto;
     height: 100%;
     z-index: -1; /* Sender den bag alt andet */
-    max-width: 1200px;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .bøger {
     display: none;
   }
@@ -60,7 +51,6 @@ h2 {
 
 form {
   color: #ffffff;
-  padding-left: 1rem;
   padding-bottom: 10px;
   font-family: "Inter", sans-serif;
   color: white;
