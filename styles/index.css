@@ -166,6 +166,19 @@ dl {
   .tider_tekst {
     padding-top: 14rem;
   }
+
+  /**** opdagelse ****/
+  .pic_tekst {
+    position: absolute;
+    top: 10%;
+    z-index: 200;
+    background-color: var(--tertiary);
+    opacity: 60%;
+    padding-left: var(--space-sm);
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-xs);
+    padding-right: var(--space-sm);
+  }
   /**** seier ****/
 
   .seier {
