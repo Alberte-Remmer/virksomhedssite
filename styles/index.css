@@ -1,9 +1,10 @@
 html {
   background-color: var(--primary);
 }
-main {
-  max-width: 1200px;
-  margin-inline: auto;
+
+video {
+  width: 100%;
+  height: 100%;
 }
 
 /**** åbningstider ****/
@@ -14,8 +15,8 @@ main {
 
 .tider_boks {
   background-color: var(--quarternary);
-  margin-left: var(--space-xs);
-  margin-right: var(--space-xs);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
   padding-bottom: var(--space-lg);
 }
 
