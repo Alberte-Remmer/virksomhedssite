@@ -4,7 +4,7 @@ html {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 p {
@@ -34,7 +34,7 @@ h2 {
 /* indhold */
 
 .tekst {
-  max-width: 1000px; /* Sæt en grænse for bredden */
+  max-width: 1200px; /* Sæt en grænse for bredden */
   margin: 0 auto; /* Centrér indholdet */
   padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
@@ -48,7 +48,7 @@ h2 {
     width: auto;
     height: 100%;
     z-index: -1; /* Sender den bag alt andet */
-    max-width: 1000px;
+    max-width: 1200px;
   }
 }
 
@@ -73,17 +73,32 @@ form {
   padding-bottom: 15px;
 }
 
-input[type="text"] {
+input {
   background-color: var(--primary); /* Lyseblå baggrund */
   border: 1px solid #ffffff; /* Blå kant */
   padding: 5px; /* Indre margin i boksen */
   border-radius: 3px; /* Afrundede hjørner */
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  width: 20rem;
 }
 
-input[type="submit"] {
+textarea {
+  background-color: var(--primary); /* Lyseblå baggrund */
+  border: 1px solid #ffffff; /* Blå kant */
+  padding: 5px; /* Indre margin i boksen */
+  border-radius: 3px; /* Afrundede hjørner */
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
+  width: 25rem;
+}
+
+button {
   background-color: var(--primary); /* Blå baggrund */
   color: #ffffff; /* Hvid tekst */
-  padding: 10px 15px; /* Størrelse på knappen */
+  padding: 7px 13px; /* Størrelse på knappen */
   border: none; /* Fjern kant */
   border-radius: 5px; /* Afrundede hjørner */
   cursor: pointer; /* Skift til klik-hånd ved hover */
@@ -91,8 +106,12 @@ input[type="submit"] {
   font-family: "Inter", sans-serif;
   font-weight: lighter;
   margin-bottom: 10px;
-  border: 2px solid var(--secondary);
-  margin-top: 2px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+button:hover {
+  color: var(--secondary); /* Hvid tekst */
+  border: 1px solid var(--secondary);
 }
 
 /* maps */

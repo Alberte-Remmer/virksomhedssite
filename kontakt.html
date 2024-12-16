@@ -61,19 +61,23 @@
 
             <form action="mailto:jrseier@gmail.com" method="post" enctype="text/plain">
                 <div class="mail_box">
-                    Navn:
-                    <br><input type="text" name="name"><br>
+                    <label>
+                        Navn:<br>
+                        <input id="full-name" name="fname" required>
+                    </label>
                 </div>
                 <div class="mail_box">
-                    E-mail:<br>
-                    <input type="text" name="mail"><br>
+                    <label>
+                        E-mail:<br>
+                        <input id="email" name="email" required>
+                    </label>
                 </div>
-                <div>
+                <div mail_box>
                     Din forespørgsel:<br>
-                    <input type="text" name="comment" size="50"><br>
+                    <textarea name="forespørgsel" rows="5"></textarea>
                 </div>
 
-                <div><br><input type="submit" value="Send"></div>
+                <button>Indsend</button>
             </form>
             <p>Eller kom ned i butikken og besøger os på Nansensgade 76, 1366 København K </p>
         </div>
