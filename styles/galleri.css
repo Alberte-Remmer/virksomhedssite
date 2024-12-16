@@ -5,6 +5,7 @@ html {
 .grid_1 {
   padding: 5%;
   margin-bottom: var(--space-md);
+  position: relative;
 }
 
 .grid_1 h1 {
@@ -24,7 +25,7 @@ p {
   position: absolute;
   width: 35%;
   aspect-ratio: 1/0;
-  top: 47%;
+  top: 90%;
   left: 5%;
   cursor: pointer;
 }
@@ -49,7 +50,7 @@ p {
     position: absolute;
     width: 17%;
     aspect-ratio: 1/0;
-    top: 45%;
+    top: 65%;
     left: 75%;
     cursor: pointer;
   }
