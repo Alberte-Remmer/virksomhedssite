@@ -1,4 +1,6 @@
 html {
+  background-color: var(--primary);
+
   /** farver **/
   --primary: #0f2815;
   --secondary: #e6bd4f;
@@ -15,6 +17,7 @@ html {
   --space-xxl: 6rem;
   --space-xxxl: 10;
 }
+
 * {
   margin: 0;
   padding: 0;
