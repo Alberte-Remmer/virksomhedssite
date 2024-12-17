@@ -6,10 +6,14 @@
 }
 
 /**** Om os ****/
+
 .om_os {
   background-color: var(--primary);
   padding-top: var(--space-sm);
   padding-bottom: var(--space-sm);
+}
+.om_titel {
+  padding: var(--space-sm);
 }
 #om_tekst1,
 #om_tekst2,
@@ -20,10 +24,12 @@
   order: 1;
 }
 /**** Skjulte skatte ****/
-.skjulte_skatte {
+.beige_baggrund {
   background-color: var(--tertiary);
-  padding-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
+}
+.skjulte_skatte {
+  padding: var(--space-xl);
+  padding-bottom: 5rem;
 }
 
 /**** Støv på støv ****/
@@ -36,22 +42,40 @@
   background-color: var(--primary);
 }
 .hjørne {
-  margin-top: -25%;
+  padding: var(--space-xl);
 }
 /**** Musen ****/
 .musen {
   background-color: var(--quarternary);
+  padding: var(--space-xl);
+  margin-bottom: rem;
 }
 
 /**** Om os ****/
 
 @media (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 63ch; /* Begrænser bredden til max 63 tegn på hver linje */
+  }
   .om_os {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-top: var(--space-xl);
     padding-right: var(--space-xl);
-    padding-bottom: var(--space-xl);
+  }
+  .om_titel {
+    padding: var(--space-sm);
+    text-align: center;
+    padding-top: var(--space-sm);
+  }
+  .om_titel2 {
+    font-size: 6rem;
   }
   #lottie-container {
     display: block;
@@ -60,13 +84,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .hjørne {
+    margin-top: -25%;
+  }
   .støv_på_støv {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .støv_på_støv2 {
+    padding: var(--space-xl);
+  }
+
   .musen {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .max {
+    max-width: 1400px;
+    margin-inline: auto;
   }
 }
