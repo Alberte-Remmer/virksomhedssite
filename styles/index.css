@@ -36,7 +36,7 @@ video {
 
 .pic_1 {
   margin-left: var(--space-xl);
-  margin-right: var(--space-xl);
+  /* margin-right: var(--space-xl); */
   padding-top: var(--space-lg);
   width: 300px;
 }
