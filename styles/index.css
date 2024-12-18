@@ -105,8 +105,8 @@ dl {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .flex_1 img {
@@ -122,7 +122,7 @@ dl {
 
 .pic_karen {
   top: 120px;
-  left: 170px;
+  left: 150px;
   z-index: 2;
 }
 
@@ -230,7 +230,7 @@ dl {
   }
 
   .flex_1 img {
-    width: 350px;
+    width: 100%;
     /* position: absolute; ???? */
   }
 
@@ -243,6 +243,14 @@ dl {
     padding-top: var(--space-xxl);
     padding-right: var(--space-xl);
     padding-bottom: var(--space-xl);
+  }
+  .flex_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
   }
 }
 
