@@ -36,19 +36,33 @@
 .støv_på_støv {
   background-color: var(--primary);
   padding-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
 }
+.støv_på_støv2 {
+  padding: var(--space-xl);
+}
+
 .grøn_bagggrund {
   background-color: var(--primary);
 }
+.dark_grøn_bagggrund {
+  background-color: var(--quarternary);
+}
 .hjørne {
+  padding-right: var(--space-xl);
+  padding-left: var(--space-xl);
+}
+.order {
   padding: var(--space-xl);
+}
+.vindue {
+  padding-right: var(--space-xl);
+  padding-left: var(--space-xl);
 }
 /**** Musen ****/
 .musen {
   background-color: var(--quarternary);
   padding: var(--space-xl);
-  margin-bottom: rem;
+  margin-bottom: 4rem;
 }
 
 /**** Om os ****/
@@ -67,7 +81,6 @@
   .om_os {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding-right: var(--space-xl);
   }
   .om_titel {
     padding: var(--space-sm);
@@ -83,13 +96,16 @@
   .skjulte_skatte {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 10%;
   }
   .hjørne {
-    margin-top: -25%;
+    margin-top: -20%;
+    max-width: 85%;
   }
   .støv_på_støv {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 12%;
   }
   .støv_på_støv2 {
     padding: var(--space-xl);
@@ -98,6 +114,13 @@
   .musen {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 93%;
+    margin-inline: auto;
+    gap: 11%;
+  }
+
+  .muse {
+    object-fit: cover;
   }
   .max {
     max-width: 1400px;
