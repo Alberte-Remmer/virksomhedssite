@@ -69,6 +69,8 @@ dl {
 
 .pic_container {
   position: relative;
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
 }
 
 .pic_container img {
@@ -103,7 +105,7 @@ dl {
   padding-left: var(--space-xl);
   padding-right: var(--space-xl);
   padding-top: var(--space-xl);
-  padding-bottom: var(--space-lg);
+  padding-bottom: var(--space-xxl);
 }
 #mørk_tekst,
 #mørk_tekst2,
@@ -253,7 +255,7 @@ dl {
     padding-left: var(--space-xxl);
     padding-top: var(--space-xxl);
     padding-right: var(--space-xl);
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
   }
 
   .flex_1 {
@@ -297,6 +299,7 @@ dl {
     background-color: var(--quarternary);
     grid-template-columns: 1fr 1fr;
     padding: 0;
+    padding-bottom: var(--space-md);
   }
 }
 
