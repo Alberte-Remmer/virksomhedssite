@@ -199,69 +199,51 @@ nav {
 }
 
 /* footer */
-
+.mail {
+  height: 25px;
+}
 .instagram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 28px;
 }
 
 .facebook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 28px;
 }
 
 .ikon-center {
   width: 30px;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
 }
 
 footer {
   background-color: #191f1b;
-}
-.footer_indhold {
   max-width: 1200px; /* Sæt en grænse for bredden */
   margin: 0 auto; /* Centrér indholdet */
   padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
 }
+.footer_indhold {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 .grid_1-1-1 {
   display: flex;
-  flex-direction: row;
-  justify-content: center; /* Centrerer horisontalt */
-  align-items: center; /* Centrerer vertikalt */
-  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
 }
 
-@media (min-width: 600px) {
-  .footer_logo {
-    position: absolute; /* Placer logoet frit */
-    bottom: 0; /* Placer helt i bunden */
-    right: 0; /* Placer helt ude til højre */
-    z-index: 1; /* Sørg for, at logoet vises oven på indhold */
-    width: 15%;
-    padding-bottom: 10%;
-    padding-right: 1rem;
-  }
+.footer_logo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer_logo img {
+  width: 50%;
 }
 
 @media (max-width: 600px) {
-  .footer_logo {
-    position: absolute; /* Placer logoet frit */
-    bottom: 0; /* Placer helt i bunden */
-    right: 0; /* Placer helt ude til højre */
-    z-index: 1; /* Sørg for, at logoet vises oven på indhold */
-    width: 20%;
-    padding-bottom: 20%;
-    padding-right: 1rem;
+  .footer_logo img {
+    width: 80%;
   }
 }
