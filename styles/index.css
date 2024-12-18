@@ -198,14 +198,15 @@ dl {
     width: 400px;
   }
   .tider_tekst {
-    padding: 10rem;
+    padding-top: 8rem;
   }
 
   dl {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
     font-family: "Inter", sans-serif;
-    /* font-size: 1.2rem; */
+    font-size: 1.2rem;
     color: white;
     font-weight: lighter;
     line-height: 3;
