@@ -40,9 +40,9 @@ h2 {
 }
 h3 {
   font-family: "Inter", sans-serif;
-  color: white;
   font-weight: lighter;
-  padding-bottom: var(--space-sm);
+  color: #ffffff;
+  /* padding-bottom: var(--space-sm); */
 }
 p {
   font-family: "Inter", sans-serif;

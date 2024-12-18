@@ -2,6 +2,11 @@ html {
   background-color: var(--primary);
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 video {
   position: relative;
   width: 100%;
@@ -22,16 +27,20 @@ video {
 }
 
 /**** åbningstider ****/
-.tider {
-  padding-top: var(--space-sm);
-  padding-bottom: var(--space-sm);
+@media (max-width: 600px) {
+  .tider {
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
+  }
 }
 
-.tider_boks {
-  background-color: var(--quarternary);
-  margin-left: var(--space-md);
-  margin-right: var(--space-md);
-  padding-bottom: var(--space-lg);
+@media (max-width: 600px) {
+  .tider_boks {
+    background-color: var(--quarternary);
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
+    padding-bottom: var(--space-lg);
+  }
 }
 
 .pic_1 {
@@ -77,6 +86,9 @@ dl {
   padding-top: var(--space-xxs);
   padding-bottom: var(--space-xxs);
   padding-right: var(--space-xs);
+  h3 {
+    font-weight: 500;
+  }
 }
 
 /**** seier ****/
@@ -192,8 +204,10 @@ dl {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    background-color: var(--quarternary);
     padding: var(--space-lg);
   }
+
   .pic_1 {
     width: 400px;
   }
@@ -224,6 +238,12 @@ dl {
     padding-bottom: var(--space-xs);
     padding-right: var(--space-sm);
   }
+
+  .pic_container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   /**** seier ****/
 
   .seier {
@@ -261,6 +281,22 @@ dl {
     padding-top: var(--space-xxl);
     padding-right: var(--space-xl);
     padding-bottom: var(--space-xl);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tider {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tider_boks {
+    display: grid;
+    background-color: var(--quarternary);
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
   }
 }
 
