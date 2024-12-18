@@ -2,10 +2,10 @@ html {
   background-color: var(--primary);
 
   /** farver **/
-  --primary: #0f2815;
+  --primary: #121e12;
   --secondary: #e6bd4f;
   --tertiary: #e2dcd0;
-  --quarternary: #131313;
+  --quarternary: #151515;
 
   /** spacing **/
   --space-xxs: 0.25rem;
@@ -95,7 +95,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #191f1b;
+  background-color: var(--quarternary);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -215,14 +215,14 @@ nav {
 }
 
 footer {
-  background-color: #191f1b;
+  background-color: var(--quarternary);
   padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
 }
 .footer_indhold {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background-color: #191f1b;
+  background-color: var(--quarternary);
   max-width: 1200px; /* Sæt en grænse for bredden */
   margin: 0 auto; /* Centrér indholdet */
 }
