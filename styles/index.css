@@ -149,17 +149,17 @@ dl {
 
 .pic_concrete {
   top: 0;
-  left: 0;
+  left: 50px;
   z-index: 1;
 }
 .pic_gul {
-  top: 40px;
+  top: 60px;
   left: 170px;
   z-index: 2;
 }
 .pic_kaput {
   top: 180px;
-  left: 80px;
+  left: 100px;
   z-index: 3;
 }
 /**** skatte ****/
@@ -201,6 +201,16 @@ dl {
     padding: 10rem;
   }
 
+  dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter", sans-serif;
+    /* font-size: 1.2rem; */
+    color: white;
+    font-weight: lighter;
+    line-height: 3;
+  }
+
   /**** opdagelse ****/
   .pic_tekst {
     position: absolute;
@@ -233,7 +243,14 @@ dl {
     width: 100%;
     /* position: absolute; ???? */
   }
-
+  .flex_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
   /**** genre ****/
 
   .genre {
@@ -243,14 +260,6 @@ dl {
     padding-top: var(--space-xxl);
     padding-right: var(--space-xl);
     padding-bottom: var(--space-xl);
-  }
-  .flex_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 300px;
-    height: 300px;
   }
 }
 
