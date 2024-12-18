@@ -4,6 +4,9 @@
     display: none;
   }
 }
+.max {
+  margin-inline: 4%;
+}
 
 /**** Om os ****/
 
@@ -63,6 +66,7 @@
   background-color: var(--quarternary);
   padding: var(--space-xl);
   margin-bottom: 4rem;
+  margin-top: 12%;
 }
 
 /**** Om os ****/
@@ -117,6 +121,7 @@
     width: 93%;
     margin-inline: auto;
     gap: 11%;
+    margin-top: 10%;
   }
 
   .muse {
