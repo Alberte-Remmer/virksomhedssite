@@ -216,14 +216,15 @@ nav {
 
 footer {
   background-color: #191f1b;
-  max-width: 1200px; /* Sæt en grænse for bredden */
-  margin: 0 auto; /* Centrér indholdet */
   padding: 20px; /* Tilføj lidt indre afstand */
   position: relative; /* Gør footeren til referencepunkt */
 }
 .footer_indhold {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: #191f1b;
+  max-width: 1200px; /* Sæt en grænse for bredden */
+  margin: 0 auto; /* Centrér indholdet */
 }
 
 .grid_1-1-1 {
