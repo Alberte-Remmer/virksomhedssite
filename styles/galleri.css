@@ -1,33 +1,37 @@
 /** Generelt **/
 html {
-  background-color: #0f2815;
+  background-color: var(--primary);
 }
 
 .grid_1 {
-  padding: var(--space-md);
-  margin-bottom: var(--space-md);
+  margin-left: var(--space-md);
+  margin-right: var(--space-md);
+  margin-bottom: var(--space-lg);
   position: relative;
 }
 
 .grid_1 h1 {
   padding-bottom: var(--space-sm);
 }
-.grid_1 h3,
-p {
-  padding-bottom: var(--space-sm);
-  max-width: 42ch; /* Begrænser bredden til max 42 tegn på hver linje */
+.grid_1 p {
+  padding-bottom: var(--space-md);
 }
+
+.grid_1 h3 {
+  padding-bottom: var(--space-sm);
+}
+
 .grid_2 {
-  background-color: #e2dcd0;
+  background-color: var(--tertiary);
   padding: 5%;
 }
 
 #knap {
   position: absolute;
-  width: 35%;
+  width: 40%;
   aspect-ratio: 1/0;
-  top: 90%;
-  left: 5%;
+  top: 95%;
+  left: 0%;
   cursor: pointer;
 }
 
@@ -79,6 +83,8 @@ p {
   }
 
   .grid_1 {
-    padding: var(--space-xl);
+    padding: var(--space-md);
+    margin-left: var(--space-md);
+    margin-right: var(--space-md);
   }
 }
