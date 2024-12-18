@@ -239,12 +239,15 @@ footer {
   justify-content: flex-end;
   align-items: center;
 }
-.footer_logo img {
-  width: 50%;
-}
 
 @media (max-width: 600px) {
   .footer_logo img {
     width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .footer_logo img {
+    width: 40%;
   }
 }
