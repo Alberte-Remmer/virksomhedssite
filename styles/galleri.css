@@ -55,6 +55,29 @@ p {
     left: 75%;
     cursor: pointer;
   }
+  #arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid var(--secondary); /* Pilens hoved */
+    position: absolute;
+    top: 77%; /* Juster efter behov for at placere pilen vertikalt */
+    left: 72%; /* Juster efter behov for at placere pilen horisontalt */
+    transform: translate(-50%, -50%); /* Centrer pilen på den ønskede position */
+  }
+
+  #arrow::after {
+    content: "";
+    position: absolute;
+    width: 60px; /* Størrelsen af pilens streg */
+    height: 4px; /* Tykkelsen af pilens streg */
+    background-color: var(--secondary); /* Farven på stregen */
+    top: 50%; /* Juster den til at være i midten af trekanten */
+    left: -70px; /* Placér stregen til venstre for trekanten */
+    transform: translateY(-50%); /* Centrer stregen vertikalt */
+  }
+
   .grid_1 {
     padding: var(--space-xl);
   }
